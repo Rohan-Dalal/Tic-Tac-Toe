@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <dialog id="player-creation">
+        <form>
+            <div>
+                <label for="player-one">Player One</label>
+                <input type="text" id="player-one">
+            </div>
+            <div>
+                <label for="player-two">Player Two</label>
+                <input type="text" id="player-two">
+            </div>
+            <button id="submit">Submit</button>
+        </form>
+    </dialog>
+
+    <div id="turn-display" class="flex-row">
+        <p></p>
+    </div>
+
+    <div class="flex-row">
+        <div id="player-display">
+            <div class="player-display">
+                <p></p>
+                <img src="images/o.png" alt="player one icon">
+            </div>
+    
+            <div class="player-display">
+                <p></p>
+                <img src="images/x.png" alt="player two icon">
+            </div>
+        </div>
+    
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    
+        <div id="score-display">
+            <div>
+                <div class="score-display">
+                    <p></p>
+                    <p>0</p>
+                </div>
+            </div>
+    
+            <div class="score-display">
+                <p></p>
+                <p>0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-row" id="display-win">
+        <p></p>
+    </div>
+
+    <div class="flex-row">
+        <button id="restart-button">Restart</button>
+    </div>
+    
+</body>
+</html>
