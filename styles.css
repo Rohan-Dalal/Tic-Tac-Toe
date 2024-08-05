@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+:root {
+    --blue: rgb(59, 168, 215);
+    --red: rgb(248, 49, 87);
+}
+
+h1 {
+    font-size: 96px;
+}
+
+#turn-display, 
+#display-win {
+    font-size: 48px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +22,8 @@
 
 body {
     height: 100vh;
+    font-family: "Nanum Pen Script";
+    background-color: azure;
 
     display: flex;
     flex-direction: column;
@@ -14,11 +32,16 @@ body {
     gap: 50px;
 }
 
+table {
+    background-color: antiquewhite;
+}
+
 td {
     width: 100px;
     height: 100px;
     padding: 16px;
-    background-color: red;
+
+    background-color: azure;
 }
 
 img {
@@ -26,11 +49,15 @@ img {
     width: 68px;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 dialog {
     justify-self: center;
     align-self: center;
+    border: none;
 }
 
 form {
@@ -38,10 +65,26 @@ form {
     flex-direction: column;
     padding: 16px;
     gap: 16px;
+    background-color: antiquewhite;
+}
+
+label,
+input {
+    font-size: 32px;
+}
+
+label {
+    margin-right: 16px;
 }
 
 dialog::backdrop {
-    background-color: white;
+    background-color: azure;
+}
+
+#player-displays {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .player-display {
@@ -51,10 +94,29 @@ dialog::backdrop {
     align-items: center;
 }
 
-#player-display {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.player-display p{
+    font-size: 32px;
+}
+
+.player-display img {
+    margin-top: 32px;
+}
+
+.score-display p {
+    font-size: 32px;
+}
+
+.score-display p:nth-child(2) {
+    font-size: 96px;
+    text-align: center;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.red {
+    color: var(--red);
 }
 
 .flex-row {
@@ -63,4 +125,27 @@ dialog::backdrop {
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+input {
+    font-family: inherit;
+    outline: none;
+    border: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: 32px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: white;
+}
+
+#restart-button {
+    width: 175px;
+    height: 35px;
+    background-color: antiquewhite;
 }

@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js" defer></script>
 </head>
 <body>
+    <h1>Tic-Tac-Toe</h1>
     <dialog id="player-creation">
         <form>
             <div>
-                <label for="player-one">Player One</label>
-                <input type="text" id="player-one">
+                <label for="player-one" class="blue">Player One</label>
+                <input type="text" id="player-one" class="blue">
             </div>
             <div>
-                <label for="player-two">Player Two</label>
-                <input type="text" id="player-two">
+                <label for="player-two" class="red">Player Two</label>
+                <input type="text" id="player-two" class="red">
             </div>
             <button id="submit">Submit</button>
         </form>
     </dialog>
 
-    <div id="turn-display" class="flex-row">
-        <p></p>
-    </div>
+    <p id="turn-display" class="flex-row"></p>
 
     <div class="flex-row">
-        <div id="player-display">
+        <div id="player-displays">
             <div class="player-display">
                 <p></p>
                 <img src="images/o.png" alt="player one icon">
@@ -57,28 +56,22 @@
             </tr>
         </table>
     
-        <div id="score-display">
-            <div>
-                <div class="score-display">
-                    <p></p>
-                    <p>0</p>
-                </div>
+        <div id="score-displays">
+            <div class="score-display">
+                <p></p>
+                <p class="blue">0</p>
             </div>
     
             <div class="score-display">
                 <p></p>
-                <p>0</p>
+                <p class="red">0</p>
             </div>
         </div>
     </div>
 
-    <div class="flex-row" id="display-win">
-        <p></p>
-    </div>
+    <button id="restart-button" class="flex-row">Restart</button>
 
-    <div class="flex-row">
-        <button id="restart-button">Restart</button>
-    </div>
+    <p id="display-win" class="flex-row">Who Will Win?!</p>
     
 </body>
 </html>
